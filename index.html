@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chat Ajax</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<body>
+    <div id="register" class="container">
+        <h3 id="h3_1">Join the chat...</h3>
+        <div class="row" id="name-container">
+            <input id="name" class="col-lg-9 form-control" type="text" placeholder="Enter your username here" />
+            <a class="col-lg-3 btn btn-primary" onclick="openChat();">Join</a>
+        </div>
+    </div>
+    <div id="opened-chat" style="display: none;" class="container-fluid">
+        <div id="chat-container" class="container">
+
+        </div>
+        <div id="chat-sender" class="container">
+            <div class="row">
+                <textarea id="msg" class="col-lg-11 form-control" placeholder="Enter your message here"></textarea>
+                <a onclick="sendMessage();" class="col-lg-1 btn btn-primary">Send</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
